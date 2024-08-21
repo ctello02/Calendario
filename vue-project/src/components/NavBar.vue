@@ -7,8 +7,8 @@
 
         <!-- Menú desplegable -->
         <nav :class="{ open: isOpen }" class="side-menu">
-            <RouterLink to="/" @click="closeMenu">Home</RouterLink>
-            <RouterLink to="/about" @click="closeMenu">About</RouterLink>
+            <RouterLink class="link" to="/" @click="closeMenu">Home</RouterLink>
+            <RouterLink class="link" to="/calendar" @click="closeMenu">Calendar</RouterLink>
         </nav>
 
         <!-- Fondo oscuro para cerrar el menú al hacer clic fuera -->
@@ -91,5 +91,12 @@ const closeMenu = () => {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 500;
+}
+
+.link {
+    margin: 15px;
+    border-radius: 10px;
+    border: 1px solid #585858;
+
 }
 </style>

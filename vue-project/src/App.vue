@@ -20,17 +20,12 @@ body,
 }
 
 .content {
-  padding-top: 50px;
-  /* Altura de la barra de navegación */
-  height: calc(100% - 50px);
-  /* Resta la altura de la barra de navegación */
+  height: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
